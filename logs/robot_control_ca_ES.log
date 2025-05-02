@@ -1,0 +1,212 @@
+2025-04-05 19:21:34,429 - MainApp - ERROR - Error important dependència: No module named 'ui.project_dialog'
+2025-04-05 19:21:34,454 - MainApp - WARNING - Arxiu de traduccions no trobat: C:\Robot Suport\resources/translations/robot_control_ca_ES.qm
+2025-04-05 19:21:34,509 - MainApp - INFO - Full d'estils creat i carregat
+2025-04-05 19:21:35,137 - MainApp - INFO - Base de dades inicialitzada: db/projects.db
+2025-04-05 19:21:40,589 - MainApp - INFO - Neteja completada. Sortint de l'aplicació.
+2025-04-05 23:14:33,945 - MainApp - ERROR - Error important dependència: No module named 'ui.project_dialog'
+2025-04-05 23:14:34,005 - MainApp - WARNING - Arxiu de traduccions no trobat: C:\Robot Suport\resources/translations/robot_control_ca_ES.qm
+2025-04-05 23:14:34,079 - MainApp - INFO - Full d'estils carregat correctament
+2025-04-05 23:14:35,373 - MainApp - INFO - Base de dades inicialitzada: db/projects.db
+2025-04-05 23:14:38,208 - MainApp - INFO - Neteja completada. Sortint de l'aplicació.
+2025-04-05 23:19:49,674 - MainApp - WARNING - Arxiu de traduccions no trobat: C:\Robot Suport\resources/translations/robot_control_ca_ES.qm
+2025-04-05 23:19:49,696 - MainApp - INFO - Full d'estils carregat correctament
+2025-04-05 23:19:50,548 - MainApp - INFO - Base de dades inicialitzada: db/projects.db
+2025-04-05 23:19:50,571 - Config - INFO - Configuració carregada des de C:/Users/kysam/AppData/Local/UPC/Sistema de Control de Robot per a Bombers\config.ini
+2025-04-05 23:19:50,572 - Config - INFO - ConfigManager inicialitzat
+2025-04-05 23:19:50,572 - Connection - INFO - ConnectionManager inicialitzat: 192.168.1.100:9999
+2025-04-05 23:19:50,573 - Sensors - INFO - Inicialitzant SensorManager
+2025-04-05 23:19:50,573 - Sensors - INFO - Llindar per Temperatura: 45.0 °C
+2025-04-05 23:19:50,573 - Sensors - INFO - Llindar per Humitat: 90.0 %
+2025-04-05 23:19:50,573 - Sensors - INFO - Llindar per Gas: 1000.0 ppm
+2025-04-05 23:19:50,573 - Sensors - INFO - Llindar per Monòxid de Carboni: 50.0 ppm
+2025-04-05 23:19:50,573 - Sensors - INFO - Llindar per Fum: 30.0 %
+2025-04-05 23:19:50,573 - Sensors - INFO - Llindar per Bateria: 20.0 %
+2025-04-05 23:19:50,574 - Sensors - INFO - SensorManager inicialitzat
+2025-04-05 23:19:50,575 - LiDAR - INFO - LidarManager inicialitzat
+2025-04-05 23:19:50,575 - Camera - INFO - CameraManager inicialitzat
+2025-04-05 23:19:50,575 - Navigation - INFO - NavigationManager inicialitzat
+2025-04-05 23:19:50,692 - MainApp - ERROR - Error inicialitzant l'aplicació: arguments did not match any overloaded call:
+  addWidget(self, w: Optional[QWidget]): too many arguments
+  addWidget(self, a0: Optional[QWidget], row: int, column: int, alignment: Union[Qt.Alignment, Qt.AlignmentFlag] = Qt.Alignment()): not enough arguments
+  addWidget(self, a0: Optional[QWidget], row: int, column: int, rowSpan: int, columnSpan: int, alignment: Union[Qt.Alignment, Qt.AlignmentFlag] = Qt.Alignment()): not enough arguments
+2025-04-05 23:19:50,696 - MainApp - ERROR - Traceback (most recent call last):
+  File "C:\Robot Suport\main.py", line 333, in __init__
+    self.main_window = MainWindow(
+                       ~~~~~~~~~~^
+        config=config,
+        ^^^^^^^^^^^^^^
+    ...<5 lines>...
+        config_manager=self.config_manager
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Robot Suport\ui\main_window.py", line 87, in __init__
+    self._init_ui()
+    ~~~~~~~~~~~~~^^
+  File "C:\Robot Suport\ui\main_window.py", line 134, in _init_ui
+    right_panel = self._create_right_panel()
+  File "C:\Robot Suport\ui\main_window.py", line 274, in _create_right_panel
+    config_panel = self._create_config_panel()
+  File "C:\Robot Suport\ui\main_window.py", line 681, in _create_config_panel
+    lidar_layout.addWidget(self.lidar_threshold_label, 0,)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: arguments did not match any overloaded call:
+  addWidget(self, w: Optional[QWidget]): too many arguments
+  addWidget(self, a0: Optional[QWidget], row: int, column: int, alignment: Union[Qt.Alignment, Qt.AlignmentFlag] = Qt.Alignment()): not enough arguments
+  addWidget(self, a0: Optional[QWidget], row: int, column: int, rowSpan: int, columnSpan: int, alignment: Union[Qt.Alignment, Qt.AlignmentFlag] = Qt.Alignment()): not enough arguments
+
+2025-04-05 23:19:53,716 - Connection - INFO - Desconnectant del bridge
+2025-04-05 23:19:53,717 - Connection - INFO - Desconnectat del bridge
+2025-04-05 23:19:53,717 - Connection - INFO - Connexió netejada
+2025-04-05 23:19:53,717 - LiDAR - INFO - LidarManager netejat
+2025-04-05 23:19:53,718 - Camera - INFO - CameraManager netejat
+2025-04-05 23:19:53,718 - Sensors - INFO - Netejant recursos de SensorManager
+2025-04-05 23:19:53,718 - MainApp - INFO - Neteja completada. Sortint de l'aplicació.
+2025-04-05 23:23:51,850 - MainApp - WARNING - Arxiu de traduccions no trobat: C:\Robot Suport\resources/translations/robot_control_ca_ES.qm
+2025-04-05 23:23:51,872 - MainApp - INFO - Full d'estils carregat correctament
+2025-04-05 23:23:52,698 - MainApp - INFO - Base de dades inicialitzada: db/projects.db
+2025-04-05 23:23:52,702 - Config - INFO - Configuració carregada des de C:/Users/kysam/AppData/Local/UPC/Sistema de Control de Robot per a Bombers\config.ini
+2025-04-05 23:23:52,702 - Config - INFO - ConfigManager inicialitzat
+2025-04-05 23:23:52,703 - Connection - INFO - ConnectionManager inicialitzat: 192.168.1.100:9999
+2025-04-05 23:23:52,703 - Sensors - INFO - Inicialitzant SensorManager
+2025-04-05 23:23:52,703 - Sensors - INFO - Llindar per Temperatura: 45.0 °C
+2025-04-05 23:23:52,704 - Sensors - INFO - Llindar per Humitat: 90.0 %
+2025-04-05 23:23:52,704 - Sensors - INFO - Llindar per Gas: 1000.0 ppm
+2025-04-05 23:23:52,704 - Sensors - INFO - Llindar per Monòxid de Carboni: 50.0 ppm
+2025-04-05 23:23:52,704 - Sensors - INFO - Llindar per Fum: 30.0 %
+2025-04-05 23:23:52,704 - Sensors - INFO - Llindar per Bateria: 20.0 %
+2025-04-05 23:23:52,704 - Sensors - INFO - SensorManager inicialitzat
+2025-04-05 23:23:52,705 - LiDAR - INFO - LidarManager inicialitzat
+2025-04-05 23:23:52,705 - Camera - INFO - CameraManager inicialitzat
+2025-04-05 23:23:52,706 - Navigation - INFO - NavigationManager inicialitzat
+2025-04-05 23:23:52,866 - MainApp - ERROR - Error inicialitzant l'aplicació: name 'QActionGroup' is not defined
+2025-04-05 23:23:52,873 - MainApp - ERROR - Traceback (most recent call last):
+  File "C:\Robot Suport\main.py", line 333, in __init__
+    self.main_window = MainWindow(
+                       ~~~~~~~~~~^
+        config=config,
+        ^^^^^^^^^^^^^^
+    ...<5 lines>...
+        config_manager=self.config_manager
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Robot Suport\ui\main_window.py", line 87, in __init__
+    self._init_ui()
+    ~~~~~~~~~~~~~^^
+  File "C:\Robot Suport\ui\main_window.py", line 141, in _init_ui
+    self._create_menu()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Robot Suport\ui\main_window.py", line 232, in _create_menu
+    self.lidar_view_group = QActionGroup(self)
+                            ^^^^^^^^^^^^
+NameError: name 'QActionGroup' is not defined. Did you mean: 'ExceptionGroup'?
+
+2025-04-05 23:23:55,776 - Connection - INFO - Desconnectant del bridge
+2025-04-05 23:23:55,777 - Connection - INFO - Desconnectat del bridge
+2025-04-05 23:23:55,777 - Connection - INFO - Connexió netejada
+2025-04-05 23:23:55,777 - LiDAR - INFO - LidarManager netejat
+2025-04-05 23:23:55,778 - Camera - INFO - CameraManager netejat
+2025-04-05 23:23:55,778 - Sensors - INFO - Netejant recursos de SensorManager
+2025-04-05 23:23:55,778 - MainApp - INFO - Neteja completada. Sortint de l'aplicació.
+2025-04-05 23:26:30,441 - MainApp - WARNING - Arxiu de traduccions no trobat: C:\Robot Suport\resources/translations/robot_control_ca_ES.qm
+2025-04-05 23:26:30,465 - MainApp - INFO - Full d'estils carregat correctament
+2025-04-05 23:26:31,278 - MainApp - INFO - Base de dades inicialitzada: db/projects.db
+2025-04-05 23:26:31,283 - Config - INFO - Configuració carregada des de C:/Users/kysam/AppData/Local/UPC/Sistema de Control de Robot per a Bombers\config.ini
+2025-04-05 23:26:31,284 - Config - INFO - ConfigManager inicialitzat
+2025-04-05 23:26:31,284 - Connection - INFO - ConnectionManager inicialitzat: 192.168.1.100:9999
+2025-04-05 23:26:31,284 - Sensors - INFO - Inicialitzant SensorManager
+2025-04-05 23:26:31,284 - Sensors - INFO - Llindar per Temperatura: 45.0 °C
+2025-04-05 23:26:31,285 - Sensors - INFO - Llindar per Humitat: 90.0 %
+2025-04-05 23:26:31,285 - Sensors - INFO - Llindar per Gas: 1000.0 ppm
+2025-04-05 23:26:31,285 - Sensors - INFO - Llindar per Monòxid de Carboni: 50.0 ppm
+2025-04-05 23:26:31,285 - Sensors - INFO - Llindar per Fum: 30.0 %
+2025-04-05 23:26:31,285 - Sensors - INFO - Llindar per Bateria: 20.0 %
+2025-04-05 23:26:31,285 - Sensors - INFO - SensorManager inicialitzat
+2025-04-05 23:26:31,286 - LiDAR - INFO - LidarManager inicialitzat
+2025-04-05 23:26:31,286 - Camera - INFO - CameraManager inicialitzat
+2025-04-05 23:26:31,286 - Navigation - INFO - NavigationManager inicialitzat
+2025-04-05 23:26:31,428 - UI.MainWindow - INFO - MainWindow inicialitzada
+2025-04-05 23:26:31,429 - MainApp - INFO - Signals/slots connectats correctament
+2025-04-05 23:26:31,429 - MainApp - INFO - Aplicació inicialitzada correctament
+2025-04-05 23:26:31,436 - MainApp - INFO - Projecte desat: Projecte per defecte (ID: 1)
+2025-04-05 23:26:31,443 - MainApp - INFO - Sessió iniciada: 1 (Projecte: 1)
+2025-04-05 23:26:31,443 - MainApp - INFO - Sessió iniciada: 1
+2025-04-05 23:26:37,617 - MainApp - INFO - Sessió finalitzada: 1 (Durada: 7206.6s)
+2025-04-05 23:26:37,618 - MainApp - INFO - Sessió finalitzada: 1
+2025-04-05 23:26:37,618 - Connection - INFO - Desconnectant del bridge
+2025-04-05 23:26:37,619 - Connection - INFO - Desconnectat del bridge
+2025-04-05 23:26:37,619 - Connection - INFO - Connexió netejada
+2025-04-05 23:26:37,619 - LiDAR - INFO - LidarManager netejat
+2025-04-05 23:26:37,620 - Camera - INFO - CameraManager netejat
+2025-04-05 23:26:37,621 - Sensors - INFO - Netejant recursos de SensorManager
+2025-04-05 23:26:37,621 - MainApp - INFO - Neteja completada. Sortint de l'aplicació.
+2025-04-05 23:31:29,439 - MainApp - WARNING - No s'ha pogut carregar l'idioma: ca_ES
+2025-04-05 23:31:29,461 - MainApp - INFO - Full d'estils carregat correctament
+2025-04-05 23:31:30,293 - MainApp - INFO - Base de dades inicialitzada: db/projects.db
+2025-04-05 23:31:30,297 - Config - INFO - Configuració carregada des de C:/Users/kysam/AppData/Local/UPC/Sistema de Control de Robot per a Bombers\config.ini
+2025-04-05 23:31:30,298 - Config - INFO - ConfigManager inicialitzat
+2025-04-05 23:31:30,298 - Connection - INFO - ConnectionManager inicialitzat: 192.168.1.100:9999
+2025-04-05 23:31:30,299 - Sensors - INFO - Inicialitzant SensorManager
+2025-04-05 23:31:30,299 - Sensors - INFO - Llindar per Temperatura: 45.0 °C
+2025-04-05 23:31:30,299 - Sensors - INFO - Llindar per Humitat: 90.0 %
+2025-04-05 23:31:30,299 - Sensors - INFO - Llindar per Gas: 1000.0 ppm
+2025-04-05 23:31:30,299 - Sensors - INFO - Llindar per Monòxid de Carboni: 50.0 ppm
+2025-04-05 23:31:30,300 - Sensors - INFO - Llindar per Fum: 30.0 %
+2025-04-05 23:31:30,300 - Sensors - INFO - Llindar per Bateria: 20.0 %
+2025-04-05 23:31:30,300 - Sensors - INFO - SensorManager inicialitzat
+2025-04-05 23:31:30,300 - LiDAR - INFO - LidarManager inicialitzat
+2025-04-05 23:31:30,301 - Camera - INFO - CameraManager inicialitzat
+2025-04-05 23:31:30,301 - Navigation - INFO - NavigationManager inicialitzat
+2025-04-05 23:31:30,441 - UI.MainWindow - INFO - MainWindow inicialitzada
+2025-04-05 23:31:30,442 - MainApp - INFO - Signals/slots connectats correctament
+2025-04-05 23:31:30,443 - MainApp - INFO - Aplicació inicialitzada correctament
+2025-04-05 23:31:30,449 - MainApp - INFO - Sessió iniciada: 2 (Projecte: 1)
+2025-04-05 23:31:30,449 - MainApp - INFO - Sessió iniciada: 2
+2025-04-05 23:32:13,595 - MainApp - ERROR - Error no capturat: NameError: name 'QApplication' is not defined
+2025-04-05 23:32:34,559 - MainApp - ERROR - Error no capturat: NameError: name 'QApplication' is not defined
+2025-04-05 23:35:48,189 - MainApp - INFO - Sessió finalitzada: 2 (Durada: 7458.2s)
+2025-04-05 23:35:48,190 - MainApp - INFO - Sessió finalitzada: 2
+2025-04-05 23:35:48,190 - Connection - INFO - Desconnectant del bridge
+2025-04-05 23:35:48,190 - Connection - INFO - Desconnectat del bridge
+2025-04-05 23:35:48,191 - Connection - INFO - Connexió netejada
+2025-04-05 23:35:48,191 - LiDAR - INFO - LidarManager netejat
+2025-04-05 23:35:48,192 - Camera - INFO - CameraManager netejat
+2025-04-05 23:35:48,192 - Sensors - INFO - Netejant recursos de SensorManager
+2025-04-05 23:35:48,192 - MainApp - INFO - Neteja completada. Sortint de l'aplicació.
+2025-04-05 23:37:20,303 - MainApp - ERROR - Error important dependència: cannot import name 'QInputDialo' from 'PyQt5.QtWidgets' (C:\Users\kysam\AppData\Local\Programs\Python\Python313\Lib\site-packages\PyQt5\QtWidgets.pyd)
+2025-04-05 23:37:20,325 - MainApp - WARNING - No s'ha pogut carregar l'idioma: ca_ES
+2025-04-05 23:37:20,349 - MainApp - INFO - Full d'estils carregat correctament
+2025-04-05 23:37:21,204 - MainApp - INFO - Base de dades inicialitzada: db/projects.db
+2025-04-05 23:37:26,697 - MainApp - INFO - Neteja completada. Sortint de l'aplicació.
+2025-04-05 23:39:08,838 - MainApp - WARNING - No s'ha pogut carregar l'idioma: ca_ES
+2025-04-05 23:39:08,861 - MainApp - INFO - Full d'estils carregat correctament
+2025-04-05 23:39:09,661 - MainApp - INFO - Base de dades inicialitzada: db/projects.db
+2025-04-05 23:39:09,665 - Config - INFO - Configuració carregada des de C:/Users/kysam/AppData/Local/UPC/Sistema de Control de Robot per a Bombers\config.ini
+2025-04-05 23:39:09,666 - Config - INFO - ConfigManager inicialitzat
+2025-04-05 23:39:09,666 - Connection - INFO - ConnectionManager inicialitzat: 192.168.1.100:9999
+2025-04-05 23:39:09,666 - Sensors - INFO - Inicialitzant SensorManager
+2025-04-05 23:39:09,666 - Sensors - INFO - Llindar per Temperatura: 45.0 °C
+2025-04-05 23:39:09,667 - Sensors - INFO - Llindar per Humitat: 90.0 %
+2025-04-05 23:39:09,667 - Sensors - INFO - Llindar per Gas: 1000.0 ppm
+2025-04-05 23:39:09,667 - Sensors - INFO - Llindar per Monòxid de Carboni: 50.0 ppm
+2025-04-05 23:39:09,667 - Sensors - INFO - Llindar per Fum: 30.0 %
+2025-04-05 23:39:09,667 - Sensors - INFO - Llindar per Bateria: 20.0 %
+2025-04-05 23:39:09,667 - Sensors - INFO - SensorManager inicialitzat
+2025-04-05 23:39:09,668 - LiDAR - INFO - LidarManager inicialitzat
+2025-04-05 23:39:09,668 - Camera - INFO - CameraManager inicialitzat
+2025-04-05 23:39:09,668 - Navigation - INFO - NavigationManager inicialitzat
+2025-04-05 23:39:09,812 - UI.MainWindow - INFO - MainWindow inicialitzada
+2025-04-05 23:39:09,813 - MainApp - INFO - Signals/slots connectats correctament
+2025-04-05 23:39:09,813 - MainApp - INFO - Aplicació inicialitzada correctament
+2025-04-05 23:39:09,819 - MainApp - INFO - Sessió iniciada: 3 (Projecte: 1)
+2025-04-05 23:39:09,820 - MainApp - INFO - Sessió iniciada: 3
+2025-04-05 23:44:05,368 - MainApp - INFO - Sessió finalitzada: 3 (Durada: 7496.4s)
+2025-04-05 23:44:05,368 - MainApp - INFO - Sessió finalitzada: 3
+2025-04-05 23:44:05,369 - Connection - INFO - Desconnectant del bridge
+2025-04-05 23:44:05,369 - Connection - INFO - Desconnectat del bridge
+2025-04-05 23:44:05,369 - Connection - INFO - Connexió netejada
+2025-04-05 23:44:05,370 - LiDAR - INFO - LidarManager netejat
+2025-04-05 23:44:05,370 - Camera - INFO - CameraManager netejat
+2025-04-05 23:44:05,370 - Sensors - INFO - Netejant recursos de SensorManager
+2025-04-05 23:44:05,370 - MainApp - INFO - Neteja completada. Sortint de l'aplicació.

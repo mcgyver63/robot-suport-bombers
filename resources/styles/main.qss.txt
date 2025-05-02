@@ -1,0 +1,266 @@
+/* 
+   Full d'estils principal per al Sistema de Control de Robot per a Bombers 
+   Este full d'estils segueix la sintaxi QSS (Qt Style Sheets)
+*/
+
+/* Estil general de l'aplicació */
+QMainWindow, QDialog {
+    background-color: #f5f5f5;
+    color: #333333;
+}
+
+/* Barra de menú i d'estat */
+QMenuBar {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 2px;
+}
+
+QMenuBar::item {
+    background-color: transparent;
+    padding: 6px 10px;
+}
+
+QMenuBar::item:selected {
+    background-color: #34495e;
+    border-radius: 2px;
+}
+
+QMenu {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    border: 1px solid #34495e;
+}
+
+QMenu::item {
+    padding: 6px 20px 6px 20px;
+}
+
+QMenu::item:selected {
+    background-color: #34495e;
+}
+
+QStatusBar {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 3px;
+}
+
+/* Estil per a les pestanyes */
+QTabWidget::pane {
+    border: 1px solid #bdc3c7;
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+
+QTabBar::tab {
+    background-color: #ecf0f1;
+    color: #34495e;
+    padding: 8px 16px;
+    border: 1px solid #bdc3c7;
+    border-bottom: none;
+    margin-right: 2px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+QTabBar::tab:selected {
+    background-color: #2980b9;
+    color: #ffffff;
+}
+
+QTabBar::tab:!selected {
+    margin-top: 2px;
+}
+
+/* Estil per a grups */
+QGroupBox {
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding-top: 10px;
+    background-color: #ffffff;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 0 5px;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+/* Estil per a botons */
+QPushButton {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    min-width: 80px;
+}
+
+QPushButton:hover {
+    background-color: #2980b9;
+}
+
+QPushButton:pressed {
+    background-color: #1a5276;
+}
+
+QPushButton:disabled {
+    background-color: #bdc3c7;
+    color: #7f8c8d;
+}
+
+/* Estil especial per a botons de parada d'emergència */
+QPushButton#emergency_btn {
+    background-color: #e74c3c;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+    min-height: 50px;
+}
+
+QPushButton#emergency_btn:hover {
+    background-color: #c0392b;
+}
+
+QPushButton#emergency_btn:pressed {
+    background-color: #922b21;
+}
+
+/* Estil per a sliders */
+QSlider::groove:horizontal {
+    border: 1px solid #bdc3c7;
+    height: 8px;
+    background: #e0e0e0;
+    margin: 2px 0;
+    border-radius: 4px;
+}
+
+QSlider::handle:horizontal {
+    background: #3498db;
+    border: 1px solid #2980b9;
+    width: 18px;
+    margin: -8px 0;
+    border-radius: 9px;
+}
+
+QSlider::handle:horizontal:hover {
+    background: #2980b9;
+}
+
+/* Estil per a comboboxes */
+QComboBox {
+    border: 1px solid #bdc3c7;
+    border-radius: 3px;
+    padding: 5px;
+    min-width: 6em;
+    background: white;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left-width: 1px;
+    border-left-color: #bdc3c7;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow {
+    image: url(resources/icons/down_arrow.png);
+    width: 10px;
+    height: 10px;
+}
+
+QComboBox QAbstractItemView {
+    border: 1px solid #bdc3c7;
+    selection-background-color: #3498db;
+    selection-color: white;
+}
+
+/* Estil per a etiquetes */
+QLabel {
+    color: #2c3e50;
+}
+
+QLabel[alert="true"] {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+QLabel[status="connected"] {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+QLabel[status="disconnected"] {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Estil per a splitters */
+QSplitter::handle {
+    background-color: #bdc3c7;
+}
+
+QSplitter::handle:horizontal {
+    width: 5px;
+}
+
+QSplitter::handle:vertical {
+    height: 5px;
+}
+
+/* Estil per a scrollbars */
+QScrollBar:vertical {
+    border: none;
+    background: #f5f5f5;
+    width: 10px;
+    margin: 0px 0px 0px 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: #bdc3c7;
+    min-height: 20px;
+    border-radius: 5px;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QScrollBar:horizontal {
+    border: none;
+    background: #f5f5f5;
+    height: 10px;
+    margin: 0px 0px 0px 0px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #bdc3c7;
+    min-width: 20px;
+    border-radius: 5px;
+}
+
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    width: 0px;
+}
+
+/* Estil per a la visualització de la càmera */
+QLabel#camera_label {
+    border: 2px solid #bdc3c7;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Estil per a components específics de cada pestanya */
+#lidar_panel, #camera_panel, #sensors_panel, #config_panel {
+    background-color: #ffffff;
+    padding: 10px;
+}

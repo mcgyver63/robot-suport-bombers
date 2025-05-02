@@ -1,0 +1,58 @@
+Listado de rutas de carpetas
+El número de serie del volumen es 1AD2-581A
+C:\ROBOT SUPORT
+|   estructura_robot.txt
+|   Main.py
+|   README.docx
+|   requeriments altre pc.pdf
+|   requirements.txt
+|   
++---config
+|   |   config.ini
+|   |   
+|   \---profiles
++---db
+|       projects.db
+|       
++---logs
+|       robot_control_ca_ES.log
+|       
++---modules
+|   |   camera.py
+|   |   config.py
+|   |   connection.py
+|   |   db.py
+|   |   lidar.py
+|   |   navigation.py
+|   |   sensors.py
+|   |   utils.py
+|   |   _init_.py
+|   |   
+|   \---__pycache__
+|           camera.cpython-313.pyc
+|           config.cpython-313.pyc
+|           connection.cpython-313.pyc
+|           db.cpython-313.pyc
+|           lidar.cpython-313.pyc
+|           navigation.cpython-313.pyc
+|           sensors.cpython-313.pyc
+|           utils.cpython-313.pyc
+|           
++---resources
+|   +---icons
+|   |       robot_icon.png
+|   |       splash.png
+|   |       
+|   +---styles
+|   |       main.qss
+|   |       main.qss.txt
+|   |       
+|   \---translations
+|           robot_control_ca_ES.qm
+|           
+\---ui
+        connection_config_dialog.py
+        main_window.py
+        project_dialog.py
+        _init_.py
+        
