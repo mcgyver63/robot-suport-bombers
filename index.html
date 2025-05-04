@@ -8,28 +8,58 @@
     <style>
         body { font-family: Arial, sans-serif; max-width: 800px; margin: 2em auto; padding: 1em; background: #f9f9f9; }
         h1 { color: #cc0000; }
-        h2 { border-bottom: 1px solid #ddd; padding-bottom: .3em; }
-        code { background: #eee; padding: 2px 4px; }
+        .lang-toggle { float: right; margin-top: -20px; }
+        .lang-toggle button { margin-left: 5px; }
+        .section { display: none; }
+        .visible { display: block; }
+        hr { margin: 2em 0; }
     </style>
+    <script>
+        function toggleLanguage(lang) {
+            document.getElementById('cat').classList.remove('visible');
+            document.getElementById('en').classList.remove('visible');
+            document.getElementById(lang).classList.add('visible');
+        }
+        window.onload = function() {
+            toggleLanguage('cat');
+        }
+    </script>
 </head>
 <body>
-    <h1>🤖 WSOL-NOSOL-SAH</h1>
-    <h2>Robot de Suport per a Bombers</h2>
-    <p><strong>Projecte desenvolupat per aportar assistència en operacions de rescat i extinció d'incendis.</strong></p>
+    <div class="lang-toggle">
+        <strong>Idioma:</strong>
+        <button onclick="toggleLanguage('cat')">Català</button>
+        <button onclick="toggleLanguage('en')">English</button>
+    </div>
 
-    <h2>Característiques</h2>
-    <ul>
-        <li>Control remot i navegació autònoma</li>
-        <li>Detecció de gasos, calor i víctimes</li>
-        <li>Mapa LiDAR en temps real</li>
-        <li>Interfície gràfica PyQt</li>
-    </ul>
+    <div id="cat" class="section visible">
+        <h1>🤖 WSOL-NOSOL-SAH</h1>
+        <h2>Robot de Suport per a Bombers</h2>
+        <p>Projecte desenvolupat per aportar assistència en operacions de rescat i extinció d'incendis.</p>
+        <ul>
+            <li>Control remot i navegació autònoma</li>
+            <li>Detecció de gasos, calor i víctimes</li>
+            <li>Mapa LiDAR en temps real</li>
+            <li>Interfície gràfica PyQt</li>
+        </ul>
+        <p>Consulta el codi a:<br>
+        <a href="https://github.com/mcgyver63/robot-suport-bombers">mcgyver63/robot-suport-bombers</a></p>
+        <p>Llicència: <a href="https://www.gnu.org/licenses/gpl-3.0.html">GPLv3</a></p>
+    </div>
 
-    <h2>Repositori complet</h2>
-    <p>Pots consultar el codi i la documentació al repositori oficial:<br>
-    👉 <a href="https://github.com/mcgyver63/robot-suport-bombers">mcgyver63/robot-suport-bombers</a></p>
-
-    <h2>Llicència</h2>
-    <p>Distribuït sota llicència <a href="https://www.gnu.org/licenses/gpl-3.0.html">GPLv3</a>.</p>
+    <div id="en" class="section">
+        <h1>🤖 WSOL-NOSOL-SAH</h1>
+        <h2>Firefighter Support Robot</h2>
+        <p>A project developed to assist in rescue and firefighting operations.</p>
+        <ul>
+            <li>Remote control and autonomous navigation</li>
+            <li>Detection of gases, heat and victims</li>
+            <li>Real-time LiDAR mapping</li>
+            <li>Graphical interface with PyQt</li>
+        </ul>
+        <p>View the full code at:<br>
+        <a href="https://github.com/mcgyver63/robot-suport-bombers">mcgyver63/robot-suport-bombers</a></p>
+        <p>License: <a href="https://www.gnu.org/licenses/gpl-3.0.html">GPLv3</a></p>
+    </div>
 </body>
 </html>
