@@ -37,29 +37,6 @@ Reduir el risc per als bombers humans mitjançant:
 - Control manual i missions automàtiques
 - Alertes visuals/sonores i registre d'esdeveniments
 
-## 📁 Estructura del Projecte
-
-```
-robot_control_system/
-├── Main.py
-├── modules/
-├── ui/
-├── config/
-├── resources/
-├── raspberry/
-├── arduino/
-├── logs/
-├── db/
-├── requirements.txt
-└── README.md
-```
-
-## 📡 Comunicacions
-
-- Protocol JSON sobre TCP/IP (PC ↔ Raspberry)
-- Serial USB (Raspberry ↔ Arduino)
-- Reconnexió automàtica i gestió d’errors
-
 ## 🔬 IA prevista (no implementada per ara)
 
 Funcions planificades però no actives per incompatibilitat entre TensorFlow i Python 3.13:
@@ -71,39 +48,107 @@ Funcions planificades però no actives per incompatibilitat entre TensorFlow i P
 
 ## 📦 Requisits
 
-Instal·lació de dependències:
 ```bash
 pip install -r requirements.txt
 ```
 
-Entorns:
 - Windows 11 (PC de control)
 - Raspberry Pi OS (bridge)
-- Arduino IDE (per carregar l'sketch)
+- Arduino IDE
 
 ## 🛠️ Execució
 
-**PC (GUI + control):**
 ```bash
 python Main.py
-```
-
-**Raspberry Pi (bridge):**
-```bash
 python raspberry/complete_bridge.py
 ```
 
-**Arduino:**
 Càrrega de `arduino/Arduino_motors_sensors.ino` amb l’IDE d’Arduino.
 
 ## 📜 Llicència
 
-Distribuït sota la [GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.html)  
-El programari és lliure, però qualsevol versió modificada ha de mantenir la mateixa llicència.
+Distribuït sota la [GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.html)
 
 ## 🙏 Agraïments
 
 Aquest projecte no hauria estat possible sense el suport dels meus companys d'intel·ligència artificial.  
-**Gràcies a ChatGPT i Claude**, que han desenvolupat la major part del codi, demostrant que, junts, **ho podem tot**.
-
+**Gràcies a ChatGPT i Claude**, que han desenvolupat la major part del codi, demostrant que, junts, **ho podem tot**.  
 També vull agrair al meu fill **Josep**, que ha suportat els meus crits i eufòries durant tot aquest projecte amb una paciència heroica.
+
+---
+
+# 🇬🇧 WSOL-NOSOL-SAH – Firefighter Support Robot
+
+An autonomous robotic system designed to explore hazardous environments, detect victims, and assist in rescue and firefighting operations.
+
+## 🎯 Project Goal
+Reduce risks to human firefighters through:
+- Remote exploration of dangerous areas
+- Real-time environmental monitoring
+- Victim detection
+- Autonomous navigation and obstacle avoidance
+
+> ⚠️ This project was developed with limited hardware resources, adapted to available economic means, as a proof of concept to validate the software. The original idea contemplated a more ambitious architecture.
+
+## 🧱 System Architecture
+
+### Level 1 – Arduino
+- Motor and actuator control
+- Sensor management (gas, ultrasonic, temperature)
+
+### Level 2 – Raspberry Pi
+- Bridge between Arduino and PC
+- LiDAR and camera data reading
+- TCP/IP communication
+- Heartbeat + Watchdog
+
+### Level 3 – PC (Windows)
+- GUI with PyQt
+- Real-time data processing
+- Manual and autonomous navigation
+
+## 🖥️ User Interface
+
+- Real-time LiDAR mapping
+- Normal and thermal video stream
+- Live sensor readings
+- Manual control and mission handling
+- Visual/audio alerts and event log
+
+## 🔬 Planned AI Features (not yet implemented)
+
+Not implemented due to incompatibility between TensorFlow and Python 3.13:
+- Fire spread prediction
+- Victim detection (vision + audio + CO₂)
+- Navigation with SLAM
+- Structural risk analysis
+- Multi-robot coordination
+
+## 📦 Requirements
+
+```bash
+pip install -r requirements.txt
+```
+
+- Windows 11 (control PC)
+- Raspberry Pi OS (bridge)
+- Arduino IDE
+
+## 🛠️ Running
+
+```bash
+python Main.py
+python raspberry/complete_bridge.py
+```
+
+Upload `arduino/Arduino_motors_sensors.ino` using the Arduino IDE.
+
+## 📜 License
+
+Distributed under [GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.html)
+
+## 🙏 Acknowledgements
+
+This project would not have been possible without the support of my AI companions.  
+**Thanks to ChatGPT and Claude**, who developed most of the code and proved that together, **everything is possible**.  
+Also, special thanks to my son **Josep**, who patiently endured my shouting and emotional outbursts throughout this entire project.
